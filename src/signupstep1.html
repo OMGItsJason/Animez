@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="/styles/signupstep1.css" />
+    <script src="/script/signupstep1.js"></script>
   </head>
   <body>
     <div class="header">
@@ -20,10 +21,28 @@
           Enter your email and password and you'll be watching in no time.
         </h2>
         <form>
-          <input type="email" placeholder="Enter your email" required />
-          <input type="password" placeholder="Enter your password" required />
-          <a href="#">Forgot your password?</a>
-          <button>Next</button>
+          <input
+            id="emailinput"
+            type="email"
+            placeholder="Enter your email"
+            autocomplete="off"
+            required
+          />
+          <input
+            id="passwordinput"
+            type="password"
+            placeholder="Enter your password"
+            autocomplete="off"
+            required
+          />
+          <input
+            id="conpassinput"
+            type="password"
+            placeholder="Confirm your password"
+            autocomplete="off"
+            required
+          />
+          <button id="nextbtn">Next</button>
         </form>
       </div>
     </div>

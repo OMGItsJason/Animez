@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log In</title>
     <link rel="stylesheet" href="/styles/login.css" />
+    <script src="/script/login.js"></script>
   </head>
   <body>
     <div class="backgroundimg">
@@ -16,15 +17,16 @@
         <h2>Log In</h2>
       </div>
       <form class="inputs">
-        <input type="text" placeholder="Email or Phone Number" autocomplete="off" required/>
-        <input type="password" placeholder="Password" autocomplete="off" required/>
+        <input id="emailinput" type="email" placeholder="Email" autocomplete="off" required/>
+        <input id="passwordinput" type="password" placeholder="Password" autocomplete="off" required/>
+        <a href="#">Forgot Password?</a>
       </form>
       <div class="button">
-        <button>Log In</button>
+        <button id="loginbtn">Log In</button>
       </div>
       <div class="rememberme-needhelp">
         <input type="checkbox">Remember me</input>
-        <a href="#">Need help?</a>
+        <a href="https://chat.openai.com/">Need help?</a>
       </div>
       <div class="signupnow">
         <p>New to Animez?</p>
@@ -32,7 +34,7 @@
       </div>
       <div class="learnmore">
         <p>This page is protected by Jason reCAPTCHA to ensure you're not a bot.
-          <a href="#">Learn more.</a>
+          <a href="https://chat.openai.com/">Learn more.</a>
         </p>
       </div>
     </div>

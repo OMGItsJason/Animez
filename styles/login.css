@@ -60,6 +60,17 @@ body {
   border-radius: 10px;
 }
 
+#passwordinput {
+  margin-bottom: 25px;
+}
+
+.inputs a {
+  text-decoration: none;
+  font-size: 20px;
+  color: blue;
+  margin-left: 55px;
+}
+
 .button {
   text-align: center;
 }
@@ -72,7 +83,7 @@ button {
   font-size: 20px;
   font-family: NetflixBold;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .rememberme-needhelp {

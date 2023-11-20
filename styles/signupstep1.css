@@ -84,23 +84,11 @@ form input {
   border-radius: 10px;
 }
 
-form a {
-  text-decoration: none;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 20px;
-  color: blue;
-}
-
-form a:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
 form button {
   background-color: #e50914;
   height: 60px;
   color: white;
+  margin-top: 50px;
   font-size: 20px;
   font-family: NetflixBold;
   border: 0;

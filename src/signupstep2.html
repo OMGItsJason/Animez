@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="/styles/signupstep2.css" />
+    <script src="/script/signupstep2.js"></script>
   </head>
   <body>
     <div class="header">
@@ -37,7 +38,8 @@
         </li>
         <h2>
           Choose your plan
-          <select>
+          <select id="selectplan" onclick="showOptions()">
+            <option value="" style="display: none"></option>
             <option value="Mobile">Mobile</option>
             <option value="Basic">Basic</option>
             <option value="Standard">Standard</option>
@@ -51,7 +53,7 @@
           limited to your household. Premium allows simultaneous streaming on 4
           devices, Standard on 2, and Basic/Mobile on 1.
         </p>
-        <div class="btn">
+        <div id="nextbtn" class="btn">
           <button>Next</button>
         </div>
       </div>
