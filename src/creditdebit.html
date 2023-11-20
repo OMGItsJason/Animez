@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="/styles/creditdebit.css" />
+    <script src="/script/creditdebit.js"></script>
   </head>
   <body>
     <div class="header">
       <nav>
         <img src="/images/Animez Logo.png" />
-        <a href="#">Log In</a>
+        <a href="/src/login.html">Log In</a>
       </nav>
       <div class="container">
         <div class="texts">
@@ -25,19 +26,32 @@
             <input
               id="cardnum"
               type="text"
+              autocomplete="off"
+              maxlength="16"
               placeholder="Card number"
               required
             />
             <input
               id="expirationdate"
               type="text"
-              placeholder="Expiration date"
+              placeholder="Expiration date MM/YY"
+              autocomplete="off"
+              maxlength="5"
               required
             />
-            <input id="cvv" type="text" placeholder="CVV" required />
+            <input
+              id="cvv"
+              type="text"
+              placeholder="CVV"
+              required
+              autocomplete="off"
+              maxlength="3"
+            />
             <input
               id="nameofcard"
               type="text"
+              autocomplete="off"
+              maxlength="50"
               placeholder="Name on Card"
               required
             />
@@ -55,11 +69,11 @@
               choose to cancel. Cancel anytime to avoid future charges.
             </p>
             <div class="checkbox">
-              <input type="checkbox" />
+              <input id="check" type="checkbox" />
               <p>I agree</p>
             </div>
             <div class="button">
-              <button>Start Membership</button>
+              <button id="startmembership">Start Membership</button>
             </div>
           </div>
         </div>

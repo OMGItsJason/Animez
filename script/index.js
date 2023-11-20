@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchBtn = document.getElementById("searchbtn");
   searchBtn.addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "https://www.pornhub.com";
+    window.location.href = "https://hentaihaven.xxx";
   });
 });

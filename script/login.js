@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (!emailval.includes("@") || passwordval.length <= 8) {
       alert("Invalid Email or Password!");
     } else {
-      alert("Successfully Log In!");
+      window.location.href = "animez.html";
     }
 
     email.value = "";

@@ -108,3 +108,7 @@ form button {
 .footer p {
   margin: 25px 0 0 250px;
 }
+
+button:hover {
+  cursor: pointer;
+}

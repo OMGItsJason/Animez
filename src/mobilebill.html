@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="/styles/mobilebill.css" />
+    <script src="/script/mobilebill.js"></script>
   </head>
   <body>
     <div class="header">
       <nav>
         <img src="/images/Animez Logo.png" />
-        <a href="#">Log In</a>
+        <a href="/src/login.html">Log In</a>
       </nav>
       <div class="container">
         <div class="texts">
@@ -30,7 +31,14 @@
           </div>
 
           <form>
-            <input type="text" placeholder="Mobile Number" required />
+            <input
+              id="mobilenumber"
+              type="text"
+              placeholder="Mobile Number"
+              required
+              autocomplete="off"
+              maxlength="11"
+            />
           </form>
           <div class="paragraphs">
             <p>
@@ -41,11 +49,11 @@
               choose to cancel. Cancel anytime to avoid future charges.
             </p>
             <div class="checkbox">
-              <input type="checkbox" />
+              <input id="check" type="checkbox" />
               <p>I agree</p>
             </div>
             <div class="button">
-              <button>Start Membership</button>
+              <button id="startmembership">Start Membership</button>
             </div>
           </div>
         </div>
